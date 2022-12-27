@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="mx-auto bg-black flex w-4/5 items-center justify-between py-4 md:justify-center">
+    <header className="mx-auto  flex w-screen items-center justify-between bg-black py-4 md:justify-center">
       {/* logo */}
       <div className="md:flex-[0.5 flex flex-initial flex-row items-center justify-start">
         {/* <Image src="" alt="" className="w-8 cursor-pointer" /> */}
