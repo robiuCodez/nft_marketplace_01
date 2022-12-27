@@ -1,7 +1,8 @@
 import { type ReactNode } from "react";
 import Head from "./head";
 
-import "../styles/globals.css"
+import "../styles/globals.css";
+import { Footer, Navbar } from "../components";
 
 interface ILayout {
   children: ReactNode;
@@ -13,8 +14,9 @@ const Layout = ({ children }: ILayout) => {
       <Head />
 
       <main>
-        <div>This is coming from Layout.</div>
+        <Navbar />
         {children}
+        <Footer />
       </main>
     </>
   );

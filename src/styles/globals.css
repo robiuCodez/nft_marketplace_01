@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer compbanents {
+  .no-scrollbar::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  .gradient-bg-hero {
+    @apply bg-[#131835];
+    background-image: radial-gradient(
+        at 0% 0%,
+        hsl(231deg 36% 15%) 0%,
+        transparent 50%
+      ),
+      radial-gradient(at 50% 0%, hsl(333deg 85% 53%) 0, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(339, 50%, 30%, 1) 0, transparent 50%);
+  }
+
+  .gradient-bg-artworks {
+    @apply bg-[#0f0e13]
+  }
+}
