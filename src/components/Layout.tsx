@@ -1,11 +1,7 @@
 import { type ReactNode } from "react";
-import Head from "./head";
+import Head from "../pages/head";
 
-import "../styles/globals.css";
-import { Footer, Navbar } from "../components";
-
-// import trpc
-import { trpc } from "../utils/trpc";
+import { Footer, Navbar } from ".";
 
 interface ILayout {
   children: ReactNode;
@@ -14,7 +10,7 @@ interface ILayout {
 const Layout = ({ children }: ILayout) => {
   return (
     <>
-      <Head />
+      {/* <Head /> */}
 
       <main>
         <Navbar />
@@ -26,4 +22,4 @@ const Layout = ({ children }: ILayout) => {
 };
 
 // using HOC.
-export default trpc.withTRPC(Layout);
+export default Layout;

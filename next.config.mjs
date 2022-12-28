@@ -8,9 +8,9 @@
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
-  experimental: {
-    appDir: true,
-  },
+  // experimental: {
+  //   appDir: true,
+  // },
   swcMinify: true,
   i18n: {
     locales: ["en"],
